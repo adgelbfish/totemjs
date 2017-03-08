@@ -1,7 +1,7 @@
 {
-  "name": "totemjs-core",
-  "version": "0.0.5",
-  "description": "totemjs core helpers",
+  "name": "golem-army",
+  "version": "0.0.0",
+  "description": "golem army tools for js",
   "main": "index.js",
   "repository": "https://github.com/adgelbfish/totemjs.git",
   "author": "Avraham David Gelbfish <adg@adgelb.fish>",

@@ -3,7 +3,7 @@ import sjcl from "../../external-lib/sjcl";
 import jsan from "jsan";
 import cloneDeep from "lodash/cloneDeep";
 
-export default function Topic(
+function Golem(
   perspective,
   fns,
   topics,
@@ -39,3 +39,5 @@ export default function Topic(
     broadcast: tl.pushEvent
   };
 }
+
+export {Golem}

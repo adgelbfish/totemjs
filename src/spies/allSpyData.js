@@ -1,4 +1,4 @@
-import Topic from "../topic/Topic";
+import {Golem} from "../golem/Golem";
 import SimpleWhenCreator from "../util/SimpleWhenCreator";
 import sjcl from "../../external-lib/sjcl";
 import jsan from "jsan";
@@ -12,9 +12,9 @@ const genericSpyHash = sjcl.hash.sha256(
 );
 
 const needsSeparationBuilderAndPrinter = (perspective, data) => {
-  perspective.push(data);
+  const newPerspective = perspective.concat(data);
   console.log(perspective);
-  return perspective;
+  return newPerspective;
 };
 
 const builderAndPrinterDescription = "helps build the perspective and prints the perspective"
@@ -23,5 +23,5 @@ const fns = [
   new SimpleWhenCreator(builder, genericSpyHash, builderAndPrinterDescription)
 ];
 
-export const allSpyData = new Topic([], fns, [], "all spy data");
+export const allSpyData = new Golem([], fns, [], "all spy data");
 
