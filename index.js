@@ -1,3 +1,3 @@
-var totem = require("./src/index");
+var totem = require("./lib/index");
 
 module.exports = totem
