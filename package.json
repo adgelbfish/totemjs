@@ -1,6 +1,6 @@
 {
   "name": "totemjs-core",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "totemjs core helpers",
   "main": "index.js",
   "repository": "https://github.com/adgelbfish/totemjs.git",
@@ -16,5 +16,10 @@
   },
   "scripts": {
     "build": "babel src --out-dir lib"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
   }
 }
