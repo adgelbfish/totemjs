@@ -1,0 +1,20 @@
+{
+  "name": "totemjs-core",
+  "version": "0.0.0",
+  "description": "totemjs core helpers",
+  "main": "index.js",
+  "repository": "https://github.com/adgelbfish/totemjs.git",
+  "author": "Avraham David Gelbfish <adg@adgelb.fish>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-env": "^1.2.1"
+  },
+  "dependencies": {
+    "jsan": "^3.1.7",
+    "lodash": "^4.17.4"
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib"
+  }
+}
